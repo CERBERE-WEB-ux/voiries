@@ -1,0 +1,123 @@
+.con{
+    font-size:70px;
+}
+.util{
+    position: relative;
+}
+.util i{
+    position: absolute;
+    width: 30px;
+    left: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 38, 255, 0.459);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.util input:focus + i{
+    color:rgba(0, 38, 255, 0.459);
+}
+.util input:hover + i{
+    color:rgba(0, 38, 255, 0.459);
+}
+.util input:active{
+    color:rgba(0, 38, 255, 0.459);
+}
+.util input:focus, .util input:hover, .util input:active{
+    -webkit-box-shadow:0 0 25px rgb(0, 0, 139);
+    -moz-box-shadow:0 0 25px rgb(0, 0, 139);
+    box-shadow: 0 0 25px rgb(0, 0, 139);
+}
+.util input{
+    text-align: center;
+}
+.pas{
+    margin-top: 4px; 
+    font-style: italic;
+}
+.password-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 61%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 20px;
+    transition: all 0.2s;
+}
+
+.password-icon:hover {
+    cursor: pointer;
+}
+
+.coulbout{
+    text-transform: uppercase;
+}
+.coulbout:hover{
+  -webkit-box-shadow:0 0 5px rgb(0, 0, 139);
+  -moz-box-shadow:0 0 5px rgb(0, 0, 139);
+  box-shadow: 0 0 5px rgb(0, 0, 139);
+  border-color: rgb(0, 0, 139);
+}
+
+
+
+
+@media (max-width: 100vh) {
+    .bg{
+        background:url(/images/bg1.png) no-repeat center;
+        background-size: fill;
+    }
+    .form-conatiner{
+        width: 95%;
+        height: auto;
+    }
+    .util{
+        margin-top: 0px;
+        font-size: 50px;
+    }
+    .util i{
+        width: 80px;
+        height: 90px;
+        align-items: center;
+    }
+    .util input{
+        font-size: 50px;
+    }
+    .bout{
+        margin-top: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+    .pas{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+    .util input:focus + i{
+        color:rgba(0, 38, 255, 0.459);
+    }
+    .util input:hover + i{
+        color:rgba(0, 38, 255, 0.459);
+    }
+    .util input:active{
+        color:rgba(0, 38, 255, 0.459);
+    }
+    .util input:focus, .util input:hover, .util input:active{
+        -webkit-box-shadow:0 0 20px rgba(255, 191, 0);
+        -moz-box-shadow:0 0 20px rgba(255, 191, 0);
+        box-shadow: 0 0 20px rgba(255, 191, 0);
+    }
+    .con{
+        font-size: 200px;
+        margin-top: 80px;
+        margin-bottom: -100px;
+    }
+    .pied{
+        font-size: 50px;
+    }
+    .password-icon{
+        font-size: 50px;
+        right: 80px;
+        top: 62%;
+
+    }
+}
